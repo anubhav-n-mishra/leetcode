@@ -1,12 +1,8 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
     long long maxKelements(vector<int>& nums, int k) {
         priority_queue<long long> pq;
-        for (int x : nums) pq.push(x);
-        
+        for (int x : nums) pq.push(x);  
         long long score = 0;
         while (k--) {
             long long val = pq.top();
